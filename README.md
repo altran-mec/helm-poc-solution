@@ -23,7 +23,6 @@ You must install and configure the following tools before moving forward
 Next, we need to run another command to enable *Ingress* addon:
 ```bash
 $ minikube addons enable ingress
-🌟  The 'ingress' addon is enabled
 ```
 
 ### Edit hosts file
