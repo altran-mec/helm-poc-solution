@@ -92,11 +92,9 @@ $ cd ingress
 $ helm install -f values.yaml ingress .
 ```
 
-## Maintanance
+## Testing
 
-In order to check the list of Helm releases:
+Test the application via
 
-```bash
-$ helm list
-```
+http://kanban.k8s.com
 
