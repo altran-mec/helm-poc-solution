@@ -81,12 +81,14 @@ $ helm install -f values.yaml backend .
 ### portal
 
 ```bash
+$ cd portal
 $ helm install -f values.yaml portal .
 ```
 
 ### Ingress
 
 ```bash
+$ cd ingress
 $ helm install -f values.yaml ingress .
 ```
 
