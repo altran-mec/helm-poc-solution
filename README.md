@@ -1,7 +1,7 @@
 # Deploy multiple applications using Helm 
 
 
-## Project architecture
+## Project Architecture
 
 It contains 4 components:
 * postgres - database
@@ -51,11 +51,11 @@ Location of *hosts* file on different OS:
 * [Windows 10](https://www.groovypost.com/howto/edit-hosts-file-windows-10/)
 * [Mac](https://www.imore.com/how-edit-your-macs-hosts-file-and-why-you-would-want#page1)
 
-## Create helm releases
+## Create Lelm releases
 
 Here is the list of commands that needs to be executed to deploy applications on the cluster. 
 
-### Postgres
+### postgres
 
 ```bash
 $ cd postgres
@@ -76,7 +76,7 @@ $ cd portal
 $ helm install -f values.yaml portal .
 ```
 
-### Ingress
+### ingress
 
 ```bash
 $ cd ingress
