@@ -4,10 +4,11 @@
 ## Project Architecture
 
 It contains 4 components:
-* postgres - database
-* backend - backend service, serving REST endpoints for a frontend
-* portal - frontend service
 * ingress - nginx ingress 
+* portal - frontend service
+* backend - backend service, serving REST endpoints for a frontend
+* postgres - database
+
 
 And here is a simplified schema of what I would like to achieve:
 
