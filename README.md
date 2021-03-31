@@ -29,10 +29,9 @@ $ minikube addons enable ingress
 ```
 
 ### Edit hosts file
-As I want to have two different URLs to enter the *adminer* (database management tool) and *kanban* app you need to config your **hosts** file - add following lines:
+You need to config your **hosts** file - add following lines:
 
 ```
-<MINIKUBE_IP>	adminer.k8s.com
 <MINIKUBE_IP>	kanban.k8s.com
 ```
 
@@ -44,7 +43,6 @@ $ minikube ip
 
 So in my case, I need to add following lines to the *hosts*  file:
 ```
-172.17.0.2	adminer.k8s.com
 172.17.0.2	kanban.k8s.com
 ```
 
@@ -62,13 +60,6 @@ Here is the list of commands that needs to be executed to deploy applications on
 ```bash
 $ cd postgres
 $ helm install -f values.yaml postgres .
-```
-
-### Adminer
-
-```bash
-$ cd adminer
-$ helm install -f values.yaml adminer .
 ```
 
 ### backend
