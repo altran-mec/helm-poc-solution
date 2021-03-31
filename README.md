@@ -1,16 +1,13 @@
-# Deploy multiple applications using Helm 
+# Deploy a solution using Helm 
 
 
-## Project Architecture
+## Solution Architecture
 
 It contains 4 components:
 * ingress - nginx ingress 
 * portal - frontend service
 * backend - backend service, serving REST endpoints for a frontend
 * postgres - database
-
-
-And here is a simplified schema of what I would like to achieve:
 
 ![Simple Architecture Diagram](https://github.com/altran-mec/helm-poc-multiple-charts/blob/main/helm_multi.PNG)
 
