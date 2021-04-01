@@ -1,4 +1,4 @@
-# Deploy a solution using Helm 
+# Deploy a solution using Helm or Helmfile
 
 
 ## Solution Architecture
@@ -18,6 +18,7 @@ You must install and configure the following tools before moving forward
 * minikube
 * kubectl
 * Helm
+* Helmfile
 
 
 Next, we need to run another command to enable *Ingress* addon:
@@ -86,3 +87,22 @@ Test the application via
 
 http://kanban.k8s.com
 
+
+## Create Helm releases via Helmfile
+
+First you need to add repository defined in `helmfile.yaml`:
+
+```bash
+$ helmfile repos
+```
+
+Then run `helm sync` command to deploy all apps (Helm releases defined in `helmfile.yaml`):
+
+```bash
+$ helmfile sync
+```
+## Testing
+
+Test the application via
+
+http://kanban.k8s.com
