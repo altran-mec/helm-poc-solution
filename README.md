@@ -17,8 +17,8 @@ You must install and configure the following tools before moving forward
 
 * minikube
 * kubectl
-* Helm
-* Helmfile
+* helm
+* helmfile
 
 
 Next, we need to run another command to enable *Ingress* addon:
