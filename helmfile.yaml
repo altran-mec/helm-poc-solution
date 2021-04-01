@@ -1,0 +1,26 @@
+repositories:
+  - name: stable
+    url: https://charts.helm.sh/stable
+
+releases:
+  - name: postgres
+    chart: ./postgres
+    values:
+      - ./postgres/values.yaml
+
+  - name: backend
+    chart: ./backend
+    values:
+      - ./backend/values.yaml
+
+  - name: portal
+    chart: ./portal
+    values:
+      - ./portal/values.yaml
+
+  - name: ingress
+    chart: ./ingress
+    values:
+      - ./ingress/values.yaml            
+
+
