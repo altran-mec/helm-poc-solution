@@ -96,7 +96,7 @@ First you need to add repository defined in `helmfile.yaml`:
 $ helmfile repos
 ```
 
-Then run `helm sync` command to deploy all apps (Helm releases defined in `helmfile.yaml`):
+Then run `helmfile sync` command to deploy all apps (Helm releases defined in `helmfile.yaml`):
 
 ```bash
 $ helmfile sync
