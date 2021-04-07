@@ -10,7 +10,7 @@ It contains 5 components:
 * postgres - database
 * adminer - admin ui for database
 
-![Simple Architecture Diagram](https://github.com/altran-mec/helm-poc-multiple-charts/blob/main/helm_multi.PNG)
+![Simple Architecture Diagram](https://github.com/altran-mec/helm-poc-multiple-charts/blob/main/solution.PNG)
 
 
 ## Prerequisites
