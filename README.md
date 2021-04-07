@@ -32,6 +32,7 @@ You need to config your **hosts** file - add following lines:
 
 ```
 <MINIKUBE_IP>	kanban.k8s.com
+<MINIKUBE_IP>	adminer.k8s.com
 ```
 
 A value for `<MINIKUBE_IP>` placeholder is individual per machine. To figure it out you need to have `minikube` up and running. If you're sure it's working you can run the command:
@@ -43,6 +44,7 @@ $ minikube ip
 So in my case, I need to add following lines to the *hosts*  file:
 ```
 172.17.0.2	kanban.k8s.com
+172.17.0.2	adminer.k8s.com
 ```
 
 Location of *hosts* file on different OS:
