@@ -80,6 +80,7 @@ $ helm install -f values.yaml portal .
 ```bash
 $ cd adminer
 $ helm install -f values.yaml adminer .
+```
 
 ### ingress
 
