@@ -228,8 +228,9 @@ primaryAsStandBy:
 ##
 initdbScripts:
   my_init_scripts.sql: |
-    CREATE TABLE links (id SERIAL PRIMARY KEY,url VARCHAR(255) NOT NULL,name VARCHAR(255) NOT NULL);
-    INSERT INTO links (url, name) VALUES('https://www.postgresqltutorial.com','PostgreSQL Tutorial');
+    CREATE TABLE kanban_users (id SERIAL PRIMARY KEY,kanban_user_id VARCHAR(255) NOT NULL,kanban_user_name VARCHAR(255) NOT NULL);
+    INSERT INTO kanban_users (kanban_user_id, kanban_user_name) VALUES('123','User1');
+    INSERT INTO kanban_users (kanban_user_id, kanban_user_name) VALUES('456','User2');
 
 ## ConfigMap with scripts to be run at first boot
 ## NOTE: This will override initdbScripts
