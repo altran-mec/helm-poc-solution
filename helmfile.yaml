@@ -14,20 +14,32 @@ releases:
     chart: ./backend
     values:
       - ./backend/values.yaml
+    needs:
+    - postgres      
 
   - name: portal
     chart: ./portal
     values:
       - ./portal/values.yaml
+    needs:
+    - postgres
+    - backend         
 
   - name: adminer
     chart: ./adminer
     values:
       - ./adminer/values.yaml     
+    needs:
+    - postgres      
 
   - name: ingress
     chart: ./ingress
     values:
-      - ./ingress/values.yaml            
+      - ./ingress/values.yaml      
+    needs:
+    - postgres
+    - backend   
+    - portal
+    - adminer            
 
 
