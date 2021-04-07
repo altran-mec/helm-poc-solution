@@ -1,10 +1,12 @@
 repositories:
   - name: stable
     url: https://charts.helm.sh/stable
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami    
 
 releases:
   - name: postgres
-    chart: ./postgres
+    chart: bitnami/postgresql
     values:
       - ./postgres/values.yaml
 
@@ -17,6 +19,11 @@ releases:
     chart: ./portal
     values:
       - ./portal/values.yaml
+
+   - name: adminer
+    chart: ./adminer
+    values:
+      - ./adminer/values.yaml     
 
   - name: ingress
     chart: ./ingress

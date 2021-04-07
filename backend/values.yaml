@@ -9,7 +9,16 @@ app:
       - name: postgres-config
     env: 
       - key: DB_SERVER
-        value: postgres
+        value: postgres-postgresql.default.svc.cluster.local
   service:
     type: ClusterIP
     port: 8080
+  config:
+    name: postgres-config
+    data:
+      - key: POSTGRES_DB
+        value: kanban
+      - key: POSTGRES_USER
+        value: kanban
+      - key: POSTGRES_PASSWORD
+        value: kanban    
