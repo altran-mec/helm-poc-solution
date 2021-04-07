@@ -1,4 +1,4 @@
-# Deploy a solution using Helm or Helmfile
+# Deploy a solution using Helm or Helmfile + day0 configuration
 
 
 ## Solution Architecture
