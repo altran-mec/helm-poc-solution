@@ -3,11 +3,12 @@
 
 ## Solution Architecture
 
-It contains 4 components:
+It contains 5 components:
 * ingress - nginx ingress 
 * portal - frontend service
 * backend - backend service, serving REST endpoints for a frontend
 * postgres - database
+* adminer - admin ui for database
 
 ![Simple Architecture Diagram](https://github.com/altran-mec/helm-poc-multiple-charts/blob/main/helm_multi.PNG)
 
@@ -74,6 +75,12 @@ $ cd portal
 $ helm install -f values.yaml portal .
 ```
 
+### adminer
+
+```bash
+$ cd adminer
+$ helm install -f values.yaml adminer .
+
 ### ingress
 
 ```bash
@@ -86,6 +93,7 @@ $ helm install -f values.yaml ingress .
 Test the application via
 
 http://kanban.k8s.com
+http://adminer.k8s.com
 
 
 ## Create Helm releases via Helmfile
@@ -106,3 +114,4 @@ $ helmfile sync
 Test the application via
 
 http://kanban.k8s.com
+http://adminer.k8s.com
