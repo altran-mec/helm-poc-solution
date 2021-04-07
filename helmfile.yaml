@@ -20,7 +20,7 @@ releases:
     values:
       - ./portal/values.yaml
 
-   - name: adminer
+  - name: adminer
     chart: ./adminer
     values:
       - ./adminer/values.yaml     
