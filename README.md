@@ -58,7 +58,7 @@ Here is the list of commands that needs to be executed to deploy applications on
 
 ```bash
 $ cd postgres
-$ helm install -f values.yaml postgres .
+$ helm install postgres -f values.yaml bitnami/postgresql
 ```
 
 ### backend
