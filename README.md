@@ -94,6 +94,7 @@ $ helm install -f values.yaml ingress .
 Test the application via
 
 http://kanban.k8s.com
+
 http://adminer.k8s.com
 
 
@@ -115,4 +116,5 @@ $ helmfile sync
 Test the application via
 
 http://kanban.k8s.com
+
 http://adminer.k8s.com
