@@ -89,15 +89,6 @@ $ cd ingress
 $ helm install -f values.yaml ingress .
 ```
 
-## Testing
-
-Test the application via
-
-http://kanban.k8s.com
-
-http://adminer.k8s.com
-
-
 ## Create Helm releases via Helmfile
 
 First you need to add repository defined in `helmfile.yaml`:
