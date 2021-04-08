@@ -5,9 +5,9 @@
 
 It contains 5 components:
 * ingress - nginx ingress 
-* portal - frontend service
-* backend - backend service, serving REST endpoints for a frontend
-* postgres - database
+* portal - frontend (Angular)
+* backend - backend service, serving REST endpoints for a frontend (Java - Spring Boot)
+* postgres - PostgreSQL database
 * adminer - admin ui for database
 
 ![Simple Architecture Diagram](https://github.com/altran-mec/helm-poc-multiple-charts/blob/main/solution.PNG)
